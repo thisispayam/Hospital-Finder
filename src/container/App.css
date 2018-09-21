@@ -59,3 +59,23 @@
 h2{
   color:#fff;
 }
+.full-width{
+  width:100%;
+  background: #e6e7e8;
+  float: left;
+}
+.hospital {
+  max-width:100%;
+  margin: auto;
+  text-align:left;
+  padding:2em;
+  border-bottom: 2px dashed #fff;
+}
+.hospital h2 {
+  color:#222;
+}
+
+.col-md-3{
+  width:33%;
+  float:left;
+}

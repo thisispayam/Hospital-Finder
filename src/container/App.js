@@ -16,7 +16,14 @@ class App extends Component {
 
 //from the react lifecycle methods which always runs after constructor
 componentDidMount(){
-  fetch('https://data.medicare.gov/resource/rbry-mqwu.json')
+  fetch('https://data.medicare.gov/resource/rbry-mqwu.json', {
+    type: 'get',   
+    data: {
+          "$limit" : 5000,
+          "$$app_token" : "gjpbk7HwGQwBgKMZ9UC9BbyF1"
+    }
+  })
+
   .then(response => {
     return response.json();
   })
@@ -25,6 +32,8 @@ componentDidMount(){
   })
 
 }
+
+
 
   onSearchChange = (event) => {
     const search = { searchfield: event.target.value }
