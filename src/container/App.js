@@ -33,8 +33,6 @@ componentDidMount(){
 
 }
 
-
-
   onSearchChange = (event) => {
     const search = { searchfield: event.target.value }
     this.setState(search)
